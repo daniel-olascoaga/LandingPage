@@ -52,15 +52,89 @@ nav .enlaces li a {
     font-size: 1rem;
 }
 
+nav .enlaces li a:hover {
+    color: #fa6804;
+}
+
 main {
-    width: 80%;
+    width: 70%;
     margin: 1.2rem auto;
     text-align: center;
     background-color: palegreen;
 }
 
+#form {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#form label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+#form input[type=email] {
+    width: 40%;
+    height: 35px;
+    margin: 0.5rem auto;
+}
+
+#form input[type=submit] {
+    width: 15%;
+    margin: 0 auto;
+    background-color: #da5b04;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+#form input[type=submit]:hover {
+    background-color: #fa6804;
+}
+
+#features {
+    background-color: azure;
+    
+}
+
+#features ul {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 50px 0 50px 0px;
+}
+
+#features ul li {
+    background-color: #eee;
+    list-style-type: none;
+    padding: 40px 0 40px 100px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#features ul li i {
+    font-size: 50px;
+    margin-right: 100px;
+    color: #fa6804;
+}
+
+#features ul li h3 {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+}
+
+#features ul li p {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 17px;
+}
+
 footer {
-    width: 80%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
     text-align: right;
@@ -84,4 +158,25 @@ footer ul li a {
 footer span {
     padding: 1rem;
     color: black;
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 515px) {
+
+    body {
+        padding-top: 210px;
+    }
+
+    header > nav {
+        flex-direction: column;
+    }
+
+    nav .enlaces li {
+        display: flex;
+        flex-direction: column;
+    }
 }

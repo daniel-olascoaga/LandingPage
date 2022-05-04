@@ -133,6 +133,18 @@ main {
     font-size: 17px;
 }
 
+#how-it-works {
+    background-color: aliceblue;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+}
+
+#how-it-works p {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    margin-top: 15px;
+}
+
 footer {
     width: 70%;
     height: auto;

@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: aqua;
+    background-color: #eee;
     position: fixed;
     width: 100%;
     top: 0;
@@ -60,7 +60,6 @@ main {
     width: 70%;
     margin: 1.2rem auto;
     text-align: center;
-    background-color: palegreen;
 }
 
 #form {
@@ -94,13 +93,7 @@ main {
     background-color: #fa6804;
 }
 
-#features {
-    background-color: azure;
-    
-}
-
 #features ul {
-    background-color: blue;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -110,7 +103,7 @@ main {
 #features ul li {
     background-color: #eee;
     list-style-type: none;
-    padding: 40px 0 40px 100px;
+    padding: 40px 0 30px 100px;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -134,9 +127,10 @@ main {
 }
 
 #how-it-works {
-    background-color: aliceblue;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 20px;
+    height: auto;
+    width: 100%;
 }
 
 #how-it-works p {
@@ -145,12 +139,66 @@ main {
     margin-top: 15px;
 }
 
+#how-it-works iframe {
+    width: 560px;
+    height: 315px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.target {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 300px;
+    padding: 2px 16px;
+    margin: 2px 16px;
+}
+
+.target h5 {
+    background-color: #ddd;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin-top: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.target h6 {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.target p {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 18px;
+    margin-bottom: 4rem;
+}
+
+.target button {
+    padding: 9px 40px;
+    background-color: #da5b04;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 15px;
+}
+
+.target button:hover {
+    background-color: #fa6804;
+}
+
 footer {
     width: 70%;
     height: auto;
     margin: 0 auto;
     text-align: right;
-    background-color: paleturquoise;
+    background-color: #ddd;
 }
 
 footer ul li {
@@ -168,6 +216,7 @@ footer ul li a {
 }
 
 footer span {
+    font-size: 1rem;
     padding: 1rem;
     color: black;
 }
@@ -190,5 +239,59 @@ footer span {
     nav .enlaces li {
         display: flex;
         flex-direction: column;
+    }
+
+    main {
+        width: 90%;
+    }
+    
+    #features ul {
+        padding: 30px 0px 30px 0px;
+    }
+    
+    #features ul li {
+        padding: 40px 0 40px 50px;
+    }
+    
+    #features ul li i {
+        font-size: 40px;
+        margin-right: 100px;
+        color: #fa6804;
+    }
+    
+    #features ul li h3 {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 15px;
+    }
+    
+    #features ul li p {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 12px;
+    }
+
+    #how-it-works iframe {
+        width: 310px;
+        height: 215px;
+    }
+
+    #how-it-works p {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    #products {
+        flex-direction: column;
+    }
+
+    .target {
+        margin-bottom: 2rem;
+    }
+
+    footer ul li a {
+        font-size: 0.8rem; 
+    }
+
+    footer span {
+        font-size: 0.5rem;
     }
 }
